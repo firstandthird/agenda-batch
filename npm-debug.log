@@ -1,24 +1,24 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'run', 'cli' ]
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'run', 'jscs' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.35
-4 verbose run-script [ 'precli', 'cli', 'postcli' ]
-5 info precli agenda-batch@0.0.1
-6 info cli agenda-batch@0.0.1
+4 verbose run-script [ 'prejscs', 'jscs', 'postjscs' ]
+5 info prejscs agenda-batch@0.0.1
+6 info jscs agenda-batch@0.0.1
 7 verbose unsafe-perm in lifecycle true
-8 info agenda-batch@0.0.1 Failed to exec cli script
-9 error agenda-batch@0.0.1 cli: `node bin/cli`
-9 error Exit status 8
-10 error Failed at the agenda-batch@0.0.1 cli script.
+8 info agenda-batch@0.0.1 Failed to exec jscs script
+9 error agenda-batch@0.0.1 jscs: `jscs -c node_modules/ft-jscs/jscs.json lib/batch.js`
+9 error Exit status 2
+10 error Failed at the agenda-batch@0.0.1 jscs script.
 10 error This is most likely a problem with the agenda-batch package,
 10 error not with npm itself.
 10 error Tell the author that this fails on your system:
-10 error     node bin/cli
+10 error     jscs -c node_modules/ft-jscs/jscs.json lib/batch.js
 10 error You can get their info via:
 10 error     npm owner ls agenda-batch
 10 error There is likely additional logging output above.
 11 error System Darwin 14.0.0
-12 error command "node" "/usr/local/bin/npm" "run" "cli"
+12 error command "node" "/usr/local/bin/npm" "run" "jscs"
 13 error cwd /Users/scarnohan/WEB-PLUGINS/node/agenda-batch
 14 error node -v v0.10.35
 15 error npm -v 1.4.28
