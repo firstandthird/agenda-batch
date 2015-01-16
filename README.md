@@ -24,6 +24,17 @@ Subsequent calls to the batch function will add data to the original waiting job
 batch.batch('batch-key', { MORE-data }, 'in 40 minutes', 'job-name');
 ```
 
+In the callback, the data will be found in the `attrs.data.jobData` attribute.
+
+```javascript
+batch.define('job-name', function(job) {
+  job.attrs.data.jobData // Will be an array of the data that was 'batched'.
+  job.attrs.data.key // The key used to store this batch for this job.
+});
+```
+
+Once the job is complete, the key will be abandoned for the next job to use (on subsequent calls to `batch()`);
+
 If required, the agenda instance is available for use.
 ```javascript
 batch.agendaModule.every();
