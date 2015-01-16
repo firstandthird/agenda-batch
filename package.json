@@ -1,0 +1,22 @@
+{
+  "name": "agenda-batch",
+  "version": "0.0.1",
+  "description": "A batch process for the agenda module",
+  "main": "lib/batch.js",
+  "scripts": {
+    "test": "mocha",
+    "cli": "node bin/cli",
+    "jscs": "jscs -c node_modules/ft-jscs/jscs.json lib/batch.js"
+  },
+  "author": "Eric Willis (First & Third)",
+  "license": "ISC",
+  "devDependencies": {
+    "expect": "^1.3.0",
+    "ft-jscs": "^1.0.0",
+    "jscs": "^1.9.0",
+    "mocha": "^2.1.0"
+  },
+  "dependencies": {
+    "agenda": "^0.6.26"
+  }
+}
