@@ -9,7 +9,7 @@ var Agenda = require('agenda');
 var Batch = require('batch');
 
 var agenda = new Agenda({ db: { address: 'db-connection:24717' } });
-batch = Batch( agenda );
+batch = new Batch( agenda );
 ```
 
 Define jobs using the agenda module:
