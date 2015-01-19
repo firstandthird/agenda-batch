@@ -8,6 +8,10 @@
     "cli": "node bin/cli",
     "jscs": "jscs -c node_modules/ft-jscs/jscs.json lib/batch.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/firstandthird/agenda-batch.git"
+  },
   "author": "Eric Willis (First & Third)",
   "license": "ISC",
   "devDependencies": {
