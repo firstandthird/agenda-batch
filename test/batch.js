@@ -12,7 +12,7 @@ describe('#()', function(){
 
   it('should instatiate properly', function(){
 
-    var a = Batch(agnd);
+    var a = new Batch(agnd);
     expect(a).to.be.a('object');
 
     var objKeys = Object.keys( a );
@@ -33,7 +33,7 @@ describe('#batch()',function() {
 
     this.timeout(5000);
 
-    var a = Batch(agnd);
+    var a = new Batch(agnd);
 
     agnd.define('test-job-a', function(e, j) {});
 
@@ -46,7 +46,7 @@ describe('#batch()',function() {
   });
 
   it('should batch data together on multiple calls', function(done) {
-    var a = Batch(agnd);
+    var a = new Batch(agnd);
 
     agnd.define('test-job-b', function(e, j) {});
 
