@@ -17,10 +17,10 @@
   "devDependencies": {
     "expect.js": "^0.3.1",
     "ft-jscs": "^1.0.0",
-    "jscs": "^1.9.0",
-    "mocha": "^2.1.0"
+    "jscs": "^3.0.7",
+    "mocha": "^3.2.0"
   },
   "dependencies": {
-    "agenda": "^0.6.26"
+    "agenda": "^0.9.0"
   }
 }
